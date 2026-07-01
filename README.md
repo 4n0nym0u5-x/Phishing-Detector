@@ -1,6 +1,15 @@
-# Phishing Detector — Enhanced Version
+# Phishing Detector / Detection Engine — Enhanced Version
+
+## Overview
+
+Built during a penetration testing internship at Deltaware Solution, this tool combines:
+- **ML Model**: Random Forest classifier trained on URL features
+- **Heuristic Engine**: 18-signal analysis including domain age, SSL certificate validity, page rank, etc.
+- **Web Interface**: Flask-based UI for real-time URL scanning
+
 
 ## File structure
+
 
 ```
 phishing-detector/
@@ -64,3 +73,6 @@ Response:
 | CLI | Single URL only | Single URL, --json flag, --batch file mode |
 | DRY | Logic duplicated in 2 routes | Single predict_url() function |
 | Web UI | Minimal form + colored label | Confidence bar, heuristic flags, feature grid |
+
+# Phishing-Detector
+ML-powered phishing URL detection engine. Random Forest classifier with 18-signal heuristic analysis.
